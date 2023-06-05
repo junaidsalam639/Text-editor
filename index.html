@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MS WORD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="icon">
+            <h1>Text Editor</h1>
+            <i class="fa-solid fa-bold" onclick="bold()"><br><span class="span1">( bold )</span></i>
+            <i class="fa-solid fa-italic" onclick="italic()"><br><span class="span1">( Italic )</span></i>
+            <i class="fa-solid fa-c" onclick="capital()"><br><span class="span1">( capit )</span></i>
+            <i class="fa-solid fa-u" onclick="upper()"><br><span class="span1">( upper )</span></i>
+            <i class="fa-solid fa-l" onclick="lower()"><br><span class="span1">( lower )</span></i>
+            <i class="fa-solid fa-underline" onclick="under()"><br><span class="span1">( under )</span></i>
+            <i class="fa-solid fa-text-slash" onclick="over()"><br><span class="span1">( thorugh )</span></i>
+            <span>
+                <i class="fa-solid fa-arrow-right" onclick="textRight()"><br><span class="span1">( left )</span></i>
+                <i class="fa-solid fa-arrow-left" onclick="textLeft()"><br><span class="span1">( right )</span></i>
+                <i class="fa-solid fa-arrow-up" onclick="textUp()"><br><span class="span1">( center )</span></i>
+                <i class="fa-solid fa-border-all" onclick="border1()"><br><span class="span1">( border )</span></i>
+                <i class="fa-solid fa-snowflake" onclick="textShadow()"><br><span class="span1">( shadow )</span></i>
+                <i class="fa-solid fa-f" onclick="font()"><br><span class="span1">( family )</span></i>
+            </span>
+            <center>            
+                <input type="text" id="input1" placeholder="enter your font-size">
+                <button onclick="apply1()">Apply</button><br>
+                <input type="text" id="input2"  placeholder="enter your color">
+                <button onclick="apply2()">Apply</button><br>
+                <input type="text" id="input3"  placeholder="enter your background-color">
+                <button onclick="apply3()">Apply</button><br>
+                 <span id="span2">score: 0</span>
+                 <span id="span3">score: 0</span><br>
+                <button onclick="wordCount()" class="count">wordCount</button>
+                <button onclick="letterCount()" class="count">letterCount</button>
+            </center>
+            </div>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
